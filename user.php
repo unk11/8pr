@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	include("./settings/connect_datebase.php");
+	include("session_check.php");
 	
 	if (isset($_SESSION['user'])) {
 		if($_SESSION['user'] == -1) {
@@ -112,6 +113,8 @@
 					}
 				});
 			}
+
+
 		</script>
 	</body>
 </html>
